@@ -1,0 +1,16 @@
+export const LOGIN = 'LOGIN';
+
+export const CHANGE_USERNAME = 'CHANGE_USERNAME';
+
+export const CHANGE_PASSWORD = 'CHANGE_PASSWORD';
+
+export const NAME_ERROR = 'NAME_ERROR';
+
+export const PASSWORD_ERROR = 'PASSWORD_ERROR';
+
+export const VALIDATED_NAME = 'VALIDATED_NAME';
+
+export const VALIDATED_PASSWORD = 'VALIDATED_PASSWORD';
+
+export const ADMIN_LOGIN = 'ADMIN_LOGIN';
+

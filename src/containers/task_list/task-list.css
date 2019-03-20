@@ -1,0 +1,19 @@
+.tasklist-container{
+    width: 70%;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.tasklist-group{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center; 
+}
+.card-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

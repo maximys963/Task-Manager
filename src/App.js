@@ -1,28 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import TaskForm from './containers/task_form/task_form';
+import TaskList from './containers/task_list/task_list';
+import LoginForm from './containers/login_form/login_form.js';
+import Menu from './components/menu';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <Router>
+                <div className="App">
+                    <Menu/>
+                    <Switch>
+                        <Route exact path='/Task-Manager' component={TaskList} />
+                        <Route path='/Task-Manager/form' component={TaskForm} />
+                        <Route path='/Task-Manager/login' component={LoginForm} />
+                    </Switch>
+                </div>
+            </Router>
+        );
+    }
 }
 
 export default App;
